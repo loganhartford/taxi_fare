@@ -18,12 +18,12 @@ RUN pip install kaggle
 # Create a directory for Kaggle API credentials
 RUN mkdir -p /root/.kaggle
 
+# Copy Kaggle API credentials if available
+COPY kaggle.json /root/.kaggle/kaggle.json
+RUN chmod 600 /root/.kaggle/kaggle.json
+
 # Set up Jupyter to use the /tf/notebooks directory
 WORKDIR /tf/notebooks
-
-# # Copy Kaggle API credentials if available
-# COPY kaggle.json /root/.kaggle/kaggle.json
-# RUN chmod 600 /root/.kaggle/kaggle.json
 
 # Expose the Jupyter notebook port
 EXPOSE 8888

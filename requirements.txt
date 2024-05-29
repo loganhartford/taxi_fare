@@ -12,3 +12,4 @@ lightgbm
 numpy
 seaborn
 jupyterlab
+dtreeviz
