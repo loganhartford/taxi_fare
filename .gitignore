@@ -2,5 +2,4 @@
 .kaggle
 kaggle.json
 .pkl
-bluebook/
-mnt/data/.ipynb_checkpoints/
+.ipynb_checkpoints/
